@@ -1,38 +1,72 @@
 .App {
+  @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500;600;700&family=Merriweather:wght@400;700;900&display=swap');
+  background-image: url('Images/bg-header.jpg');
+  background-size: cover;
+  height: 753px;
+  background-repeat: no-repeat;
+}
+ul{
+  list-style-type: none;
+}
+ul li a{
+  text-decoration: none;
+  color: rgb(179, 179, 179);
+  padding: 10px 40px;
+  font-size: 20px;
+  font-weight: 400;
+}
+ul li a:hover{
+  cursor: pointer;
+  color: white;
+  font-weight: 500;
+  border-bottom: 2px solid white;
+}
+nav ul{
+  display: inline-flex;
+}
+.navbarComponent{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.HeaderMain{
+  margin-top: 180px;
+  text-align: center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.HeaderMain h4{
+  font-size: 28px;
+  font-weight: 500;
   color: white;
+  font-family: 'Merriweather';
+}
+.HeaderMain h3{
+  font-size: 40px;
+  margin-top: -20px;
+  font-weight: 700;
+  color: white;
+  font-family: 'Merriweather';
+}
+.buttonHire{
+  margin-top: 125px;
+}
+.HeaderMain .buttonHire a{
+  border: 2px solid #FF9900;
+  color: white;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 10px 30px;
+  font-weight: 400;
+}
+.buttonHire a:hover{
+  border: 3px solid #ffbd5a;
+  font-weight: 500;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.about{
+  margin-top: 350px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.about h3{
+  text-align: center;
+  font-family: 'Merriweather';
+  font-weight: 700;
+  font-size: 40px;
 }
