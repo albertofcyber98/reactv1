@@ -5,7 +5,7 @@
   height: 753px;
   background-repeat: no-repeat;
 }
-ul{
+/* ul{
   list-style-type: none;
 }
 ul li a{
@@ -23,7 +23,7 @@ ul li a:hover{
 }
 nav ul{
   display: inline-flex;
-}
+} */
 .navbarComponent{
   text-align: center;
 }
