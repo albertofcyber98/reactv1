@@ -1,9 +1,11 @@
 .App {
   @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500;600;700&family=Merriweather:wght@400;700;900&display=swap');
-  background-image: url('Images/bg-header.jpg');
+  background-image: url('TugasPotofolio/Images/bg-header.jpg');
   background-size: cover;
-  height: 753px;
+  min-height: 100vh;
+  /* height: 753px; */
   background-repeat: no-repeat;
+  overflow-x: hidden;
 }
 /* ul{
   list-style-type: none;
@@ -24,7 +26,7 @@ ul li a:hover{
 nav ul{
   display: inline-flex;
 } */
-.navbarComponent{
+/* .navbarComponent{
   text-align: center;
 }
 .HeaderMain{
@@ -47,19 +49,6 @@ nav ul{
 .buttonHire{
   margin-top: 125px;
 }
-.HeaderMain .buttonHire a{
-  border: 2px solid #FF9900;
-  color: white;
-  border-radius: 5px;
-  font-size: 18px;
-  padding: 10px 30px;
-  font-weight: 400;
-}
-.buttonHire a:hover{
-  border: 3px solid #ffbd5a;
-  font-weight: 500;
-  cursor: pointer;
-}
 
 .about{
   margin-top: 350px;
@@ -69,4 +58,21 @@ nav ul{
   font-family: 'Merriweather';
   font-weight: 700;
   font-size: 40px;
+} */
+
+/* TUgas Form Validation */
+h4{
+  text-align: center;
+  color: white;
+  font-size: 40px !important;
+  margin-bottom: 20px !important;
+}
+div{
+  justify-content: center;
+}
+Form{
+  margin-top: 50px;
+}
+Label{
+  color: white;
 }
