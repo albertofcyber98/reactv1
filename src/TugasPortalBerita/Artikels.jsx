@@ -11,7 +11,7 @@ export default class Artikels extends React.Component {
         }
     }
     componentDidMount() {
-        let url = `https://newsapi.org/v2/top-headlines?category=technology&q=${this.state.kondisi}&apiKey=73991280e5124b388b6c65cf1cac98c8`
+        let url = `https://newsapi.org/v2/top-headlines?category=technology&apiKey=73991280e5124b388b6c65cf1cac98c8`
         fetch(url)
             .then(res => res.json())
             .then(json => {
