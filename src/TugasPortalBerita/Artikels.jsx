@@ -56,43 +56,43 @@ export default class Artikels extends React.Component {
                         </div>
                         <CardGroup>
                             <Row>
-                                {items.articles.map(item => (
-                                    <Col sm="6" md="4" className="my-5">
-                                        <Card key={item.source.id}>
-                                            <CardImg
-                                                alt="Card image cap"
-                                                src={item.urlToImage}
-                                                top
-                                                width="100%"
-                                            />
-                                            <CardBody>
-                                                <CardTitle tag="h5">
-                                                    {item.title}
-                                                </CardTitle>
-                                                <CardSubtitle
-                                                    className="mb-2 text-muted"
-                                                    tag="h6"
-                                                >
-                                                    {item.publishedAt}
-                                                </CardSubtitle>
-                                                <CardSubtitle
-                                                    className="mb-2 text-muted"
-                                                    tag="h6"
-                                                >
-                                                    {item.author}
-                                                </CardSubtitle>
-                                                <CardText>
-                                                    {item.description}
-                                                </CardText>
-                                                <Button
-                                                    color="success"
-                                                >
-                                                    Read More
-                                                </Button>
-                                            </CardBody>
-                                        </Card>
+                                {items.articles.map((item, i) => 
+                                    <Col sm="6" md="4" className="my-5" key={i}>
+                                            <Card>
+                                                <CardImg
+                                                    alt="Card image cap"
+                                                    src={item.urlToImage}
+                                                    top
+                                                    width="100%"
+                                                />
+                                                <CardBody>
+                                                    <CardTitle tag="h5">
+                                                        {item.title}
+                                                    </CardTitle>
+                                                    <CardSubtitle
+                                                        className="mb-2 text-muted"
+                                                        tag="h6"
+                                                    >
+                                                        {item.publishedAt}
+                                                    </CardSubtitle>
+                                                    <CardSubtitle
+                                                        className="mb-2 text-muted"
+                                                        tag="h6"
+                                                    >
+                                                        {item.author}
+                                                    </CardSubtitle>
+                                                    <CardText>
+                                                        {item.description}
+                                                    </CardText>
+                                                    <Button
+                                                        color="success"
+                                                    >
+                                                        Read More
+                                                    </Button>
+                                                </CardBody>
+                                            </Card>
                                     </Col>
-                                ))}
+                                )}
                             </Row>
                         </CardGroup>
                     </Container>
