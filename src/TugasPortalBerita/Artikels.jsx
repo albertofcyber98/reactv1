@@ -56,7 +56,7 @@ export default class Artikels extends React.Component {
                         </div>
                         <CardGroup>
                             <Row>
-                                {items.articles.map((item, i) => 
+                                {items?.articles.map((item, i) => 
                                     <Col sm="6" md="4" className="my-5" key={i}>
                                             <Card>
                                                 <CardImg
