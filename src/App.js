@@ -1,13 +1,13 @@
 import './App.css';
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import TugasFormValidation from './TugasFormValidation/Index';
+import TugasPortalBerita from './TugasPortalBerita/Index';
 
 
 function App() {
   return (
-    <div className="App">
-      <TugasFormValidation/>
+    <div>
+      <TugasPortalBerita/>
     </div>
   );
 }
