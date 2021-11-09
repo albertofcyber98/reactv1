@@ -17,9 +17,10 @@ export default class Artikels extends React.Component {
             .then(json => {
                 this.setState({
                     isLoaded: true,
-                    items: json
+                    items: json.articles
                 })
             });
+            
     }
     handleSubmit = (event) =>{
         event.preventDefault();
@@ -56,7 +57,7 @@ export default class Artikels extends React.Component {
                         </div>
                         <CardGroup>
                             <Row>
-                                {items.articles.map((item, i) => 
+                                {items.map((item, i) => 
                                     <Col sm="6" md="4" className="my-5" key={i}>
                                             <Card>
                                                 <CardImg
