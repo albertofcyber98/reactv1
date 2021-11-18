@@ -27,9 +27,7 @@ export default class Artikels extends React.Component {
         this.componentDidMount(this.state.kondisi);
     }
     render() {
-
         var { isLoaded, items } = this.state;
-
         if (!isLoaded) {
             return (
                 <Spinner>Loading... </Spinner>
@@ -100,6 +98,5 @@ export default class Artikels extends React.Component {
                 </div>
             )
         }
-
     }
 }
