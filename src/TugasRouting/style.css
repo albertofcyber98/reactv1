@@ -1,0 +1,10 @@
+.custom-button{
+    color: slateblue;
+    border: 1px solid slateblue;
+    text-decoration: none;
+    padding: 11px 30px;
+}
+.custom-button:hover{
+    background-color: slateblue;
+    color: white;
+}
